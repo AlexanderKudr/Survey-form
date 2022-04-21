@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Satisfaction Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <h1 id="title">Employee Satisfaction Survey</h1>
+            <p id="description">Please take a few moments to complete this survey</p>
+        </header>
+        <hr>
+        <form id="survey-form">
+            <div>
+                <label id=id="name-label">First Name</label>
+                <input id="name"/>
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input/>
+            </div>
+            <div>
+                <label id="email-label">Email</label>
+                <input id="email"/>
+            </div>
+            <div>
+                <label id="number-label">Age</label>
+                <input id="number" type="number"/>
+            </div>
+            <div>
+                <p>How would you describe your overall level of job satisfaction</p>
+                <select id="dropdown">
+                    <option disabled selected value>Select one</option>                   
+                    <option>Very satisfied</option>
+                    <option>Somewhat satisfied</option>
+                    <option>Neutral</option>
+                    <option>Somewhat dissatisfied</option>
+                    <option>Very dissatisfied</option>
+                </select>
+            </div>
+            <div>
+                <p>Do you feel valued at work?</p>
+                <label id="valued-at-work">
+                    <input 
+                    type="radio"
+                    name="valued-at-work"
+                    value="Yes"/>Yes
+                </label>
+                <label id="valued-at-work">
+                    <input 
+                    type="radio"
+                    name="valued-at-work"
+                    value="No"/>No
+                </label>
+                <label id="valued-at-work">
+                    <input 
+                    type="radio"
+                    name="valued-at-work"
+                    value="Not sure"/>Not sure
+                </label>
+            </div>
+            
+        </form>
+</body>
+</html>
