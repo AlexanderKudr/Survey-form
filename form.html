@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
+    <header>
             <h1 id="title">Employee Satisfaction Survey</h1>
             <p id="description">Please take a few moments to complete this survey</p>
-        </header>
+    </header>
         <hr>
         <form id="survey-form">
             <div>
                 <label id=id="name-label">First Name</label>
-                <input id="name"/>
+                <input 
+                id="name"
+                required/>
             </div>
             <div>
                 <label>Last Name</label>
@@ -61,6 +63,32 @@
                     name="valued-at-work"
                     value="Not sure"/>Not sure
                 </label>
+                <p>If no, please explain</p>
+                <textarea placeholder="Type here....">
+                </textarea>
+            </div>
+            <div>
+                <p>Do you have the resources you need to perform your job well?</p>
+                <label id="Do you have resources">
+                    <input 
+                    type="radio" 
+                    name="resources" 
+                    value="yes"/>Yes
+                </label>
+                <label id="Do you have resources">
+                    <input 
+                    type="radio" 
+                    name="resources" 
+                    value="no"/>No
+                </label>
+                <p>If no, tell us what needed</p>
+                <textarea placeholder="Type here....">
+                </textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">
+                    Submit
+                </button>
             </div>
             
         </form>
