@@ -7,12 +7,12 @@
     <title>Employee Satisfaction Survey</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="container">
     <header>
             <h1 id="title">Employee Satisfaction Survey</h1>
             <p id="description">Please take a few moments to complete this survey</p>
     </header>
-        <hr>
+        <div class="top-line"></div>
         <form id="survey-form">
             <div>
                 <label id="name-label">First Name</label>
@@ -56,20 +56,47 @@
             </div>
             <div>
                 <p>What would you like to see improved?</p>
-                <label>Check all that fit</label>
-                <!-- NEED TO WORK HERE
-                    
+                <label>Check all that fit:</label>
                 <input
-                Salary										
-                Health benefits					
-                Physical work environment					
-                Senior leadership					
-                Individual management					
-                Performance feedback					
-                Employee evaluations					
-                Recognition					
-                Training opportunities					
-                Opportunities for advancement/> -->
+                type="checkbox"
+                name="see improved"
+                value="Salary"/>Salary
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Health benefits"/>Health benefits
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Physical work enviroment"/>Physical work environment
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Senior leadership"/>Senior leadership
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Individual management"/>Individual management							
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Perfomance feedback"/>Performance feedback					
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Employee evaluations"/>Employee evaluations						
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Recognition"/>Recognition					
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Training opportunities"/>Training opportunities					
+                <input
+                type="checkbox"
+                name="see improved"
+                value="Opportunities for advancement"/>Opportunities for advancement
             </div>
             <div>
                 <p>Do you feel valued at work?</p>

@@ -1,8 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 body {
     font-family: "Nunito", sans-serif;
+    border: 5px solid hsla(13, 80%, 69%, 0.555);
+    width: 800px;
+    
+}
+.top-line {
+    border-top: 1px solid hsl(0, 0%, 33%);
+    margin-bottom: 10px;
+    
 }
 #valued-at-work {
     display: list-item;
-    
+    list-style: none;  
 }
+
+/* I should understand how this works
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  } */
