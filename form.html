@@ -1,151 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee Satisfaction Survey</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
     <header>
-            <h1 id="title">Employee Satisfaction Survey</h1>
-            <p id="description">Please take a few moments to complete this survey</p>
+      <h1 id="title">Employee Satisfaction Survey</h1>
+      <p id="description">Please take a few moments to complete this survey</p>
     </header>
-        <div class="top-line"></div>
-        <form id="survey-form">
-            <div>
-                <label id="name-label">First Name</label>
-                <input 
-                    id="name"
-                    placeholder="enter your first name"
-                    required/>
-            </div>
-            <div>
-                <label>Last Name</label>
-                <input
-                    placeholder="optional"/>
-            </div>
-            <div>
-                <label id="email-label">Email</label>
-                <input 
-                    id="email"
-                    type="email" 
-                    placeholder="enter your email"
-                    required/>
-            </div>
-            <div>
-                <label id="number-label">Age</label>
-                <input 
-                    id="number" 
-                    type="number" 
-                    min=10 
-                    max=99
-                    placeholder="optional"/>
-            </div>
-            <div>
-                <p>How would you describe your overall level of job satisfaction</p>
-                <select id="dropdown">
-                    <option disabled selected value>Select one</option>                   
-                    <option>Very satisfied</option>
-                    <option>Somewhat satisfied</option>
-                    <option>Neutral</option>
-                    <option>Somewhat dissatisfied</option>
-                    <option>Very dissatisfied</option>
-                </select>
-            </div>
-            <div>
-                <p>What would you like to see improved?</p>
-                <label>Check all that fit:</label>
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Salary"/>Salary
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Health benefits"/>Health benefits
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Physical work enviroment"/>Physical work environment
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Senior leadership"/>Senior leadership
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Individual management"/>Individual management							
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Perfomance feedback"/>Performance feedback					
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Employee evaluations"/>Employee evaluations						
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Recognition"/>Recognition					
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Training opportunities"/>Training opportunities					
-                <input
-                type="checkbox"
-                name="see improved"
-                value="Opportunities for advancement"/>Opportunities for advancement
-            </div>
-            <div>
-                <p>Do you feel valued at work?</p>
-                <label id="valued-at-work">
-                <input 
-                    type="radio"
-                    name="valued-at-work"
-                    value="Yes"/>Yes
-                </label>
-                <label id="valued-at-work">
-                <input 
-                    type="radio"
-                    name="valued-at-work"
-                    value="No"/>No
-                </label>
-                <label id="valued-at-work">
-                    <input 
-                    type="radio"
-                    name="valued-at-work"
-                    value="Not sure"/>Not sure
-                </label>
-                <p>If no, please explain</p>
-                <textarea placeholder="Type here....">
-                </textarea>
-            </div>
-            <div>
-                <p>Do you have the resources you need to perform your job well?</p>
-                <label id="Do you have resources">
-                    <input 
-                    type="radio" 
-                    name="resources" 
-                    value="yes"/>Yes
-                </label>
-                <label id="Do you have resources">
-                    <input 
-                    type="radio" 
-                    name="resources" 
-                    value="no"/>No
-                </label>
-                <p>If no, tell us what needed</p>
-                <textarea placeholder="Type here....">
-                </textarea>
-            </div>
-            <div>
-                <button id="submit" type="submit">
-                    Submit
-                </button>
-            </div>
-            
-        </form>
-</body>
+    <div id="top-line"></div>
+    <form id="survey-form">
+      <div id="names">
+        <div>
+          <label id="name-label">First Name</label>
+          <input id="name" placeholder="enter your first name" required />
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input placeholder="optional" />
+        </div>
+      </div>
+      <div id="emailandage">
+        <div>
+          <label id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="enter your email"
+            required
+          />
+        </div>
+        <div>
+          <label id="number-label">Age</label>
+          <input
+            id="number"
+            type="number"
+            min="10"
+            max="99"
+            placeholder="optional"
+          />
+        </div>
+      </div>
+      <div>
+        <p>How would you describe your overall level of job satisfaction</p>
+        <select id="dropdown">
+          <option disabled selected value>Select one</option>
+          <option>Very satisfied</option>
+          <option>Somewhat satisfied</option>
+          <option>Neutral</option>
+          <option>Somewhat dissatisfied</option>
+          <option>Very dissatisfied</option>
+        </select>
+      </div>
+      <div>
+        <p>
+          What would you like to see improved?<span>
+            <i>(Check all that fit)</i></span
+          >
+        </p>
+        <div class="checkboxcolumn">
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Salary"
+            class="see-improved"
+          />Salary
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Health benefits"
+            class="see-improved"
+          />Health benefits
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Physical work enviroment"
+            class="see-improved"
+          />Physical work environment
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Senior leadership"
+          />Senior leadership
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Individual management"
+          />Individual management
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Perfomance feedback"
+          />Performance feedback
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Employee evaluations"
+          />Employee evaluations
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Recognition"
+          />Recognition
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Training opportunities"
+          />Training opportunities
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="see improved"
+            value="Opportunities for advancement"
+          />Opportunities for advancement
+        </div>
+        </label>
+      </div>
+      <div>
+        <p>Do you feel valued at work?</p>
+        <label id="valued-at-work">
+          <input type="radio" name="valued-at-work" value="Yes" />Yes
+        </label>
+        <label id="valued-at-work">
+          <input type="radio" name="valued-at-work" value="No" />No
+        </label>
+        <label id="valued-at-work">
+          <input type="radio" name="valued-at-work" value="Not sure" />Not sure
+        </label>
+        <p>If no, please explain</p>
+        <textarea placeholder="Type here...."> </textarea>
+      </div>
+      <div>
+        <p>Do you have the resources you need to perform your job well?</p>
+        <label id="Do you have resources">
+          <input type="radio" name="resources" value="yes" />Yes
+        </label>
+        <label id="Do you have resources">
+          <input type="radio" name="resources" value="no" />No
+        </label>
+        <p>If no, tell us what needed</p>
+        <textarea placeholder="Type here...."> </textarea>
+      </div>
+      <div>
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
 </html>
