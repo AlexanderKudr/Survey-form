@@ -3,6 +3,11 @@ body {
   font-family: "Nunito", sans-serif;
   border: 5px solid hsla(13, 80%, 69%, 0.555);
 }
+body::before {
+  content: "";
+  background: rgb(230, 174, 101);
+
+}
 
 /*Page responsiveness*/
 
@@ -28,6 +33,7 @@ body {
 }
 #description {
   text-align: center;
+  font-style: italic;
 }
 
 /*form*/
