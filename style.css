@@ -52,11 +52,13 @@ body::before {
 label {
   display: block;
 }
+
 p {
   font-weight: 600;
 }
 #survey-form {
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: hsla(32, 99%, 69%, 0.372);
@@ -67,6 +69,16 @@ p {
 }
 
 /*personal info*/
+
+#name,
+#number,
+#email,
+#lastname {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  margin: 2.5px;
+  
+}
 
 #names,
 #emailandage {
@@ -91,7 +103,16 @@ p {
   list-style: none;
 }
 
-/*checkboxes*/
+/* Dropdown */
+
+#dropdown {
+  display: block;
+  width: 65%;
+  margin-top: -10px;
+  border-radius: 10px;
+  padding: 2.5px;
+}
+/*Checkboxes*/
 
 #checkboxcolumn {
   columns: 2;
@@ -100,4 +121,37 @@ p {
   #checkboxcolumn {
     columns: 1;
   }
+}
+.see-improved {
+  background-color: hsl(0, 0%, 100%);
+}
+/* Radiobuttons */
+
+.radiobuttons {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Textarea */
+
+#textarea {
+  display: block;
+  width: 99%;
+  margin: auto;
+  resize: vertical;
+  border-radius: 10px;
+  padding-top: 5px;
+  min-height: 70px;
+  background-color: hsl(0, 0%, 100%)
+}
+/* Submit */
+
+#submit {
+  display: block;
+  margin: auto;
+  width: 100%;
+  background-color:hsl(304, 100%, 85%);
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
 }
